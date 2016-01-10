@@ -11,16 +11,14 @@ import UIKit
 class Question1: UIViewController {
     var player1Name:String = ""
     
+    @IBOutlet weak var name: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "removeKeyboard")
-        textFieldEnterName.placeholder = "Enter Name Here"
         
-        view.addGestureRecognizer(tap)
-        
-        anything.text = player1Name
+        name.text = player1Name
 
     }
 
