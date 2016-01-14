@@ -26,7 +26,15 @@ class Question1: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    override func viewWillAppear(animated: Bool) {
+        self.viewWillAppear(animated)
+        name.center.x = view.bounds.width
+    }
+    override func viewDidAppear(animated: Bool) {
+        self.viewDidAppear(animated)
+        UIView.animateWithDuration(0.5, delay: 0, options: [], animations: {self.name.center.x += self.view.bounds.width}, completion: nil)
+        
+    }
 
     /*
     // MARK: - Navigation
