@@ -54,6 +54,10 @@ class Player1: UIViewController {
             var svc = segue.destinationViewController as! Player2;
             svc.player1Name = textFieldEnterName.text!
         }
+        if(segue.identifier == "segueChangeQ1"){
+            var svc = segue.destinationViewController as! Question1;
+            svc.player1Name = textFieldEnterName.text!
+        }
     }
 
     /*
