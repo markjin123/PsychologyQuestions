@@ -37,8 +37,11 @@ class Question1: UIViewController {
         super.viewDidAppear(animated)
         UIView.animateWithDuration(0.5, delay: 0, options: [], animations: {self.name.center.x += self.view.bounds.width}, completion: nil)
         UIView.animateWithDuration(0.3, delay: 0.7, options: [], animations: {self.Questions1.alpha += 1}, completion: nil)
-        let timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("updateTimer"), userInfo: nil, repeats: true)
+
         
+    }
+    func countDownTimerInit(){
+        let keepCount = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: ("updateTimer"), userInfo: nil, repeats: true)
     }
     func updateTimer(timer:NSTimer){
         if(time > 0){
