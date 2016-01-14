@@ -11,6 +11,7 @@ import UIKit
 class Question1: UIViewController {
     var player1Name:String = ""
     
+    @IBOutlet weak var Questions1: UILabel!
     @IBOutlet weak var name: UILabel!
     
     override func viewDidLoad() {
@@ -27,12 +28,14 @@ class Question1: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func viewWillAppear(animated: Bool) {
-        self.viewWillAppear(animated)
+        super.viewWillAppear(animated)
         name.center.x = view.bounds.width
+        Questions1.alpha -= 1
     }
     override func viewDidAppear(animated: Bool) {
-        self.viewDidAppear(animated)
+        super.viewDidAppear(animated)
         UIView.animateWithDuration(0.5, delay: 0, options: [], animations: {self.name.center.x += self.view.bounds.width}, completion: nil)
+        UIView.animateWithDuration(0.3, delay: 0.7, options: [], animations: {self.Questions1.alpha += 1}, completion: nil)
         
     }
 
