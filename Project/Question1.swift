@@ -20,7 +20,7 @@ class Question1: UIViewController {
 
         // Do any additional setup after loading the view.
         name.text = player1Name
-        NSObject.performSelector(Selector("countDownTimerInit"), withObject: self, afterDelay: 1.0)
+       // NSObject.performSelector(Selector("countDownTimerInit"), withObject: self, afterDelay: 1.0)
 
     }
 
@@ -30,22 +30,30 @@ class Question1: UIViewController {
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        name.center.x = view.bounds.width
+        name.center.x -= view.bounds.width
         Questions1.alpha -= 1
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        let activeCounter = NSTimer.scheduledTimerWithTimeInterval(2.8, target: self, selector: ("timerInit:"), userInfo: nil, repeats: false)
         UIView.animateWithDuration(0.5, delay: 0, options: [], animations: {self.name.center.x += self.view.bounds.width}, completion: nil)
-        UIView.animateWithDuration(0.3, delay: 0.7, options: [], animations: {self.Questions1.alpha += 1}, completion: nil)
+        UIView.animateWithDuration(0.5, delay: 2, options: [], animations: {self.name.center.x -= self.view.bounds.width}, completion: nil)
+        UIView.animateWithDuration(0.3, delay: 2.5, options: [], animations: {self.Questions1.alpha += 1}, completion: nil)
+        
 
+    }
+    func timerInit(timer:NSTimer){
+        let keepCount = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: ("updateTimer:"), userInfo: nil, repeats: true)
         
     }
-    func countDownTimerInit(){
-        let keepCount = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: ("updateTimer"), userInfo: nil, repeats: true)
-    }
+
     func updateTimer(timer:NSTimer){
         if(time > 0){
             countDownLabel.text = String(time--)
+        }
+        else{
+            //when reaches 0
+            countDownLabel.alpha -= 1
         }
         
     }
