@@ -10,16 +10,17 @@ import UIKit
 
 class Question1: UIViewController {
     var player1Name:String = ""
-    
+    var time:Int = 120
     @IBOutlet weak var Questions1: UILabel!
     @IBOutlet weak var name: UILabel!
     
+    @IBOutlet weak var countDownLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         name.text = player1Name
+        NSObject.performSelector(Selector("countDownTimerInit"), withObject: self, afterDelay: 1.0)
 
     }
 
@@ -36,9 +37,15 @@ class Question1: UIViewController {
         super.viewDidAppear(animated)
         UIView.animateWithDuration(0.5, delay: 0, options: [], animations: {self.name.center.x += self.view.bounds.width}, completion: nil)
         UIView.animateWithDuration(0.3, delay: 0.7, options: [], animations: {self.Questions1.alpha += 1}, completion: nil)
+        let timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("updateTimer"), userInfo: nil, repeats: true)
         
     }
-
+    func updateTimer(timer:NSTimer){
+        if(time > 0){
+            countDownLabel.text = String(time--)
+        }
+        
+    }
     /*
     // MARK: - Navigation
 
