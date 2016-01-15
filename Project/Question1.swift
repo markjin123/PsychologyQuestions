@@ -14,7 +14,6 @@ class Question1: UIViewController {
     var time:Int = 120
     @IBOutlet weak var Questions1: UILabel!
     @IBOutlet weak var name: UILabel!
-    
     @IBOutlet weak var nextQuestion: UIButton!
     @IBOutlet weak var name2: UILabel!
     @IBOutlet weak var timesUp: UILabel!
@@ -45,7 +44,7 @@ class Question1: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        var activeCounter = NSTimer.scheduledTimerWithTimeInterval(2.8, target: self, selector: ("timerInit:"), userInfo: nil, repeats: false)
+        _ = NSTimer.scheduledTimerWithTimeInterval(2.8, target: self, selector: ("timerInit:"), userInfo: nil, repeats: false)
         
         //the follow two parts is how the player1 label is animated
         UIView.animateWithDuration(0.5, delay: 0, options: [], animations: {self.name.center.x += self.view.bounds.width}, completion: nil)
@@ -58,8 +57,8 @@ class Question1: UIViewController {
         //after the timer is up it will go to the function enableTouch which enables the use to touch the screen
         //this function is how you delay things and it this as its parameters
         
-        //NSTimer.scheduledTimerWithTimeInterval("how long it is delayed", target: self, selector: "the function that you hope to run when the delay is done", userInfo: nil, repeats: "true if you want to repeat and delay the same amount of time again, false if you don't")
-        var activePause = NSTimer.scheduledTimerWithTimeInterval(123, target: self, selector: "enableTouch", userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval("how long it is delayed", target: self, selector: "the function that you hope to run when the delay is done", userInfo: nil, repeats: "true if you want to repeat and delay the same amount of time again, false if you don't"))
+        //var activePause = NSTimer.scheduledTimerWithTimeInterval(123, target: self, selector: ("enableTouch"), userInfo: nil, repeats: false)
     }
     
     func enableTouch(){

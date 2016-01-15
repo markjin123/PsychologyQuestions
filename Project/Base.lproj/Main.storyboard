@@ -113,13 +113,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1bs-AM-yES">
-                                <rect key="frame" x="139" y="325" width="42" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player1Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y11-6Q-7NE">
                                 <rect key="frame" x="84" y="146" width="100" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -145,7 +138,17 @@
                                 <rect key="frame" x="123" y="404" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <segue destination="6F4-ZF-Xtf" kind="modal" identifier="segueChangeQ1" id="5RL-Fj-uCD"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1bs-AM-yES">
+                                <rect key="frame" x="139" y="325" width="42" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -155,7 +158,6 @@
                         <outlet property="name" destination="Y11-6Q-7NE" id="XsO-fF-K4D"/>
                         <outlet property="name2" destination="q4K-hC-c9q" id="dY6-9N-mDG"/>
                         <outlet property="nextQuestion" destination="dW0-f4-gFJ" id="gYU-Sk-teM"/>
-                        <outlet property="nextQuetion" destination="dW0-f4-gFJ" id="7yv-b7-D7w"/>
                         <outlet property="timesUp" destination="3cP-Cr-nOe" id="Jyo-0y-vhF"/>
                     </connections>
                 </viewController>
@@ -176,7 +178,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next Question"/>
                                 <connections>
-                                    <segue destination="7Jd-bZ-E8u" kind="modal" id="Ous-Sp-XVR"/>
+                                    <segue destination="7Jd-bZ-E8u" kind="modal" identifier="segueChangeQ3" id="Ous-Sp-XVR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player1Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sHg-Dw-RgC">
