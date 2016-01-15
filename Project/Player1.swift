@@ -51,11 +51,7 @@ class Player1: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "segueChange"){
-            var svc = segue.destinationViewController as! Player2;
-            svc.player1Name = textFieldEnterName.text!
-        }
-        if(segue.identifier == "segueChangeQ1"){
-            var svc = segue.destinationViewController as! Question1;
+            let svc = segue.destinationViewController as! Player2;
             svc.player1Name = textFieldEnterName.text!
         }
     }

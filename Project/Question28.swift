@@ -9,7 +9,8 @@
 import UIKit
 
 class Question28: UIViewController {
-
+    var player1Name:String = ""
+    var player2Name:String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -10,11 +10,15 @@ import UIKit
 
 class Question1: UIViewController {
     var player1Name:String = ""
+    var player2Name:String = ""
     var time:Int = 120
     @IBOutlet weak var Questions1: UILabel!
     @IBOutlet weak var name: UILabel!
     
+    @IBOutlet weak var name2: UILabel!
+    @IBOutlet weak var timesUp: UILabel!
     @IBOutlet weak var countDownLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,7 +39,7 @@ class Question1: UIViewController {
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        let activeCounter = NSTimer.scheduledTimerWithTimeInterval(2.8, target: self, selector: ("timerInit:"), userInfo: nil, repeats: false)
+        var activeCounter = NSTimer.scheduledTimerWithTimeInterval(2.9, target: self, selector: ("timerInit:"), userInfo: nil, repeats: false)
         UIView.animateWithDuration(0.5, delay: 0, options: [], animations: {self.name.center.x += self.view.bounds.width}, completion: nil)
         UIView.animateWithDuration(0.5, delay: 2, options: [], animations: {self.name.center.x -= self.view.bounds.width}, completion: nil)
         UIView.animateWithDuration(0.3, delay: 2.5, options: [], animations: {self.Questions1.alpha += 1}, completion: nil)
@@ -43,8 +47,16 @@ class Question1: UIViewController {
 
     }
     func timerInit(timer:NSTimer){
-        let keepCount = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: ("updateTimer:"), userInfo: nil, repeats: true)
+        var keepCount = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: ("updateTimer:"), userInfo: nil, repeats: true)
         
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "segueChangeQ2"){
+            let svc = segue.destinationViewController as! Question2;
+            svc.player1Name = self.player1Name
+            svc.player2Name = self.player2Name
+        }
     }
 
     func updateTimer(timer:NSTimer){

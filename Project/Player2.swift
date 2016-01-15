@@ -10,7 +10,7 @@ import UIKit
 
 class Player2: UIViewController {
 
-    var player1Name:String = ""
+    var player1Name:String = "" 
     
     @IBOutlet weak var anything: UILabel!
     
@@ -54,7 +54,13 @@ class Player2: UIViewController {
         UIView.animateWithDuration(0.5, delay: 0, options: [], animations: {self.labelPlayer2.alpha = 1}, completion: nil)
         UIView.animateWithDuration(0.5, delay: 1, options: [], animations: {self.buttonDone.alpha = 1}, completion: nil)
     }
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "segueChangeQ1"){
+            let svc = segue.destinationViewController as! Question1;
+            svc.player1Name = player1Name
+            svc.player2Name = textFieldEnterName.text!
+        }
+    }
 
     /*
     // MARK: - Navigation

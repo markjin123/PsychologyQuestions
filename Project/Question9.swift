@@ -9,7 +9,8 @@
 import UIKit
 
 class Question9: UIViewController {
-
+    var player1Name:String = ""
+    var player2Name:String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +22,13 @@ class Question9: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "segueChange10"){
+            let svc = segue.destinationViewController as! Question10;
+            svc.player1Name = player1Name
+            svc.player2Name = player2Name
+        }
+    }
     /*
     // MARK: - Navigation
 
