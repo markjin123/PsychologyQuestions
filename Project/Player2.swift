@@ -10,7 +10,8 @@ import UIKit
 
 class Player2: UIViewController {
 
-    var player1Name:String = "" 
+    var player1Name:String = ""
+    var player2Name:String = ""
     
     @IBOutlet weak var anything: UILabel!
     
