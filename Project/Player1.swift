@@ -53,6 +53,7 @@ class Player1: UIViewController {
         if(segue.identifier == "segueChange"){
             let svc = segue.destinationViewController as! Player2;
             svc.player1Name = textFieldEnterName.text!
+            svc.player2Name = labelPlayer1.text!
         }
     }
 

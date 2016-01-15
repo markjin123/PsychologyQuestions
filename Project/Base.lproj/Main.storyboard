@@ -145,9 +145,6 @@
                                 <rect key="frame" x="123" y="404" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next Question"/>
-                                <connections>
-                                    <segue destination="6F4-ZF-Xtf" kind="modal" id="ve0-aE-QK1"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,6 +154,8 @@
                         <outlet property="countDownLabel" destination="1bs-AM-yES" id="iRM-em-AXZ"/>
                         <outlet property="name" destination="Y11-6Q-7NE" id="XsO-fF-K4D"/>
                         <outlet property="name2" destination="q4K-hC-c9q" id="dY6-9N-mDG"/>
+                        <outlet property="nextQuestion" destination="dW0-f4-gFJ" id="gYU-Sk-teM"/>
+                        <outlet property="nextQuetion" destination="dW0-f4-gFJ" id="7yv-b7-D7w"/>
                         <outlet property="timesUp" destination="3cP-Cr-nOe" id="Jyo-0y-vhF"/>
                     </connections>
                 </viewController>
