@@ -11,10 +11,14 @@ import UIKit
 class Question14: UIViewController {
     var player1Name:String = ""
     var player2Name:String = ""
+    
+    @IBOutlet weak var name: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        name.text = player2Name
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,7 +27,7 @@ class Question14: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if(segue.identifier == "segueChange15"){
+        if(segue.identifier == "segueChangeQ15"){
             let svc = segue.destinationViewController as! Question15;
             svc.player1Name = player1Name
             svc.player2Name = player2Name

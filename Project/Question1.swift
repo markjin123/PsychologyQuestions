@@ -14,7 +14,6 @@ class Question1: UIViewController {
     var time:Int = 120
     @IBOutlet weak var Questions1: UILabel!
     @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var nextQuestion: UIButton!
     @IBOutlet weak var name2: UILabel!
     @IBOutlet weak var timesUp: UILabel!
     @IBOutlet weak var countDownLabel: UILabel!
@@ -24,7 +23,7 @@ class Question1: UIViewController {
 
         // Do any additional setup after loading the view.
         name.text = player1Name
-        nextQuestion.alpha = 0
+        //nextQuestion.alpha = 0
 
     }
 
@@ -52,12 +51,12 @@ class Question1: UIViewController {
         
         
         //this line is how the we animate the alpha of the question
-        UIView.animateWithDuration(0.3, delay: 2.5, options: [], animations: {self.Questions1.alpha += 1}, completion: nil)
+        UIView.animateWithDuration(0.3, delay: 1.5, options: [], animations: {self.Questions1.alpha += 1}, completion: nil)
         
         //after the timer is up it will go to the function enableTouch which enables the use to touch the screen
         //this function is how you delay things and it this as its parameters
         
-        NSTimer.scheduledTimerWithTimeInterval("how long it is delayed", target: self, selector: "the function that you hope to run when the delay is done", userInfo: nil, repeats: "true if you want to repeat and delay the same amount of time again, false if you don't"))
+        //NSTimer.scheduledTimerWithTimeInterval("how long it is delayed", target: self, selector: "the function that you hope to run when the delay is done", userInfo: nil, repeats: "true if you want to repeat and delay the same amount of time again, false if you don't"))
         //var activePause = NSTimer.scheduledTimerWithTimeInterval(123, target: self, selector: ("enableTouch"), userInfo: nil, repeats: false)
     }
     
