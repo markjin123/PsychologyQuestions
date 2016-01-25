@@ -23,7 +23,8 @@ class Question1: UIViewController {
 
         // Do any additional setup after loading the view.
         name.text = player1Name
-        //nextQuestion.alpha = 0
+        //nextQuestion.alpha = 
+        
 
     }
 
