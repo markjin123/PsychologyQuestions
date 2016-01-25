@@ -11,10 +11,14 @@ import UIKit
 class Question5: UIViewController {
     var player1Name:String = ""
     var player2Name:String = ""
+    
+    @IBOutlet weak var name: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        name.text = player1Name
     }
 
     override func didReceiveMemoryWarning() {
