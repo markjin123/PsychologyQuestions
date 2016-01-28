@@ -43,6 +43,10 @@
 		5FB344021C3F494100F833B4 /* Instructions Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB344011C3F494100F833B4 /* Instructions Page.swift */; };
 		5FB344041C3F4C0900F833B4 /* Player1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB344031C3F4C0900F833B4 /* Player1.swift */; };
 		5FB344061C3F501800F833B4 /* Player2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB344051C3F501800F833B4 /* Player2.swift */; };
+		8E8C1A711C59C42A00577076 /* Questions29.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C1A701C59C42A00577076 /* Questions29.swift */; };
+		8E8C1A731C59C45200577076 /* Question30.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C1A721C59C45200577076 /* Question30.swift */; };
+		8E8C1A751C59C46E00577076 /* Question31.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C1A741C59C46E00577076 /* Question31.swift */; };
+		8E8C1A771C59C55800577076 /* Question32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C1A761C59C55800577076 /* Question32.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +88,10 @@
 		5FB344011C3F494100F833B4 /* Instructions Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Instructions Page.swift"; sourceTree = "<group>"; };
 		5FB344031C3F4C0900F833B4 /* Player1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player1.swift; sourceTree = "<group>"; };
 		5FB344051C3F501800F833B4 /* Player2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player2.swift; sourceTree = "<group>"; };
+		8E8C1A701C59C42A00577076 /* Questions29.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Questions29.swift; sourceTree = "<group>"; };
+		8E8C1A721C59C45200577076 /* Question30.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question30.swift; sourceTree = "<group>"; };
+		8E8C1A741C59C46E00577076 /* Question31.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question31.swift; sourceTree = "<group>"; };
+		8E8C1A761C59C55800577076 /* Question32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question32.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +161,10 @@
 				5F057AB31C473CDA0006D342 /* Question26.swift */,
 				5F057AB51C473CE50006D342 /* Question27.swift */,
 				5F057AB71C473CF20006D342 /* Question28.swift */,
+				8E8C1A701C59C42A00577076 /* Questions29.swift */,
+				8E8C1A721C59C45200577076 /* Question30.swift */,
+				8E8C1A741C59C46E00577076 /* Question31.swift */,
+				8E8C1A761C59C55800577076 /* Question32.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -228,15 +240,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8C1A731C59C45200577076 /* Question30.swift in Sources */,
 				5F057AAE1C473CB60006D342 /* Question23.swift in Sources */,
 				5F057AB41C473CDA0006D342 /* Question26.swift in Sources */,
 				5F057AA81C473C990006D342 /* Question20.swift in Sources */,
 				5F057A981C473C4A0006D342 /* Question12.swift in Sources */,
+				8E8C1A711C59C42A00577076 /* Questions29.swift in Sources */,
 				5F057AAA1C473CA10006D342 /* Question21.swift in Sources */,
 				5F057AAC1C473CAC0006D342 /* Question22.swift in Sources */,
 				5FB227E51C3C9DAC00F06FA6 /* ViewController.swift in Sources */,
 				5F057AA01C473C710006D342 /* Question16.swift in Sources */,
 				5F057AB01C473CC20006D342 /* Question24.swift in Sources */,
+				8E8C1A751C59C46E00577076 /* Question31.swift in Sources */,
 				5F057A901C473C130006D342 /* Question8.swift in Sources */,
 				5F057A8E1C473C060006D342 /* Question7.swift in Sources */,
 				5F057A921C473C1F0006D342 /* Question9.swift in Sources */,
@@ -254,6 +269,7 @@
 				5FB344021C3F494100F833B4 /* Instructions Page.swift in Sources */,
 				5F057A9A1C473C540006D342 /* Question13.swift in Sources */,
 				5F057A861C473BA60006D342 /* Question3.swift in Sources */,
+				8E8C1A771C59C55800577076 /* Question32.swift in Sources */,
 				5F057A8C1C473BDD0006D342 /* Question6.swift in Sources */,
 				5F057AB21C473CCD0006D342 /* Question25.swift in Sources */,
 				5FB344041C3F4C0900F833B4 /* Player1.swift in Sources */,

@@ -9,16 +9,11 @@
 import UIKit
 
 class Player2: UIViewController {
-
     var player1Name:String = ""
     var player2Name:String = ""
-    
     @IBOutlet weak var anything: UILabel!
-    
     @IBOutlet weak var textFieldEnterName: UITextField!
-    
     @IBOutlet weak var labelPlayer2: UILabel!
-    
     @IBOutlet weak var buttonDone: UIButton!
     
     override func viewDidLoad() {
@@ -54,6 +49,7 @@ class Player2: UIViewController {
         UIView.animateWithDuration(0.5, delay: 0.5, options: [], animations: {self.textFieldEnterName.alpha = 1}, completion: nil)
         UIView.animateWithDuration(0.5, delay: 0, options: [], animations: {self.labelPlayer2.alpha = 1}, completion: nil)
         UIView.animateWithDuration(0.5, delay: 1, options: [], animations: {self.buttonDone.alpha = 1}, completion: nil)
+        
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "segueChangeQ1"){
