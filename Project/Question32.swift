@@ -2,8 +2,8 @@
 //  Question32.swift
 //  Project
 //
-//  Created by Mark Jin on 2016-01-27.
-//  Copyright © 2016 Jacqueline Jia. All rights reserved.
+//  Created by PsychologyQuestions on 2016-01-27.
+//  Copyright © 2016 PsychologyQuestions. All rights reserved.
 //
 
 import UIKit

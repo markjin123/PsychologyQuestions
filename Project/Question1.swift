@@ -2,8 +2,8 @@
 //  Question1.swift
 //  Project
 //
-//  Created by sisi on 2016-01-09.
-//  Copyright © 2016 Jacqueline Jia. All rights reserved.
+//  Created by PsychologyQuestions on 2016-01-09.
+//  Copyright © 2016 PsychologyQuestions. All rights reserved.
 //
 
 import UIKit
@@ -52,7 +52,7 @@ class Question1: UIViewController {
         
         
         //this line is how the we animate the alpha of the question
-        UIView.animateWithDuration(0.3, delay: 1.5, options: [], animations: {self.Questions1.alpha += 1}, completion: nil)
+        UIView.animateWithDuration(0.3, delay: 2.5, options: [], animations: {self.Questions1.alpha += 1}, completion: nil)
         
         //after the timer is up it will go to the function enableTouch which enables the use to touch the screen
         //this function is how you delay things and it this as its parameters

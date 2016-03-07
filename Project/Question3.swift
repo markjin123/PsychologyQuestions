@@ -2,8 +2,8 @@
 //  Question3.swift
 //  Project
 //
-//  Created by sisi on 2016-01-13.
-//  Copyright © 2016 Jacqueline Jia. All rights reserved.
+//  Created by PsychologyQuestions on 2016-01-13.
+//  Copyright © 2016 PsychologyQuestions. All rights reserved.
 //
 
 import UIKit

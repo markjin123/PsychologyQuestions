@@ -2,8 +2,8 @@
 //  Question2.swift
 //  Project
 //
-//  Created by sisi on 2016-01-13.
-//  Copyright © 2016 Jacqueline Jia. All rights reserved.
+//  Created by PsychologyQuestions on 2016-01-13.
+//  Copyright © 2016 PsychologyQuestions. All rights reserved.
 //
 
 import UIKit
@@ -11,6 +11,8 @@ import UIKit
 class Question2: UIViewController {
     var player1Name:String = ""
     var player2Name:String = ""
+    
+    @IBOutlet weak var name2: UILabel!
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var question2: UILabel!
@@ -40,7 +42,7 @@ class Question2: UIViewController {
         //this is to make the alpha of the Question1 = 0 so we can improve its alpha back to 1 for the animation
         question2.alpha -= 0
     }
-/*
+
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         _ = NSTimer.scheduledTimerWithTimeInterval(2.8, target: self, selector: ("timerInit:"), userInfo: nil, repeats: false)
@@ -69,7 +71,7 @@ class Question2: UIViewController {
     func timerInit(timer:NSTimer){
         var keepCount = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: ("updateTimer:"), userInfo: nil, repeats: true)
     }
-*/
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "segueChangeQ3"){
             let svc = segue.destinationViewController as! Question3;
