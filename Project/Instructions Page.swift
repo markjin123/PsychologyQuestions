@@ -16,6 +16,9 @@ class Instructions_Page: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        labelTitle.text = "Instructions"
+        labelParagraph.text = "Grab a friend, lover, partner or family member and start answering some question. Each individual will get 1 minute to answer each of the questions before moving on."
 
         // Do any additional setup after loading the view.
     }

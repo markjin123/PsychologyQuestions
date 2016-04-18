@@ -78,7 +78,7 @@
 		5F057AB51C473CE50006D342 /* Question27.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question27.swift; sourceTree = "<group>"; };
 		5F057AB71C473CF20006D342 /* Question28.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question28.swift; sourceTree = "<group>"; };
 		5F7F1D8D1C41ED9200E52E37 /* Question1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question1.swift; sourceTree = "<group>"; };
-		5FB227DF1C3C9DAB00F06FA6 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB227DF1C3C9DAB00F06FA6 /* 36Questions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 36Questions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB227E21C3C9DAC00F06FA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FB227E41C3C9DAC00F06FA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5FB227E71C3C9DAC00F06FA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		5FB227E01C3C9DAB00F06FA6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5FB227DF1C3C9DAB00F06FA6 /* Project.app */,
+				5FB227DF1C3C9DAB00F06FA6 /* 36Questions.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5FB227DE1C3C9DAB00F06FA6 /* Project */ = {
+		5FB227DE1C3C9DAB00F06FA6 /* 36Questions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5FB227F11C3C9DAC00F06FA6 /* Build configuration list for PBXNativeTarget "Project" */;
+			buildConfigurationList = 5FB227F11C3C9DAC00F06FA6 /* Build configuration list for PBXNativeTarget "36Questions" */;
 			buildPhases = (
 				5FB227DB1C3C9DAB00F06FA6 /* Sources */,
 				5FB227DC1C3C9DAB00F06FA6 /* Frameworks */,
@@ -184,9 +184,9 @@
 			);
 			dependencies = (
 			);
-			name = Project;
+			name = 36Questions;
 			productName = Project;
-			productReference = 5FB227DF1C3C9DAB00F06FA6 /* Project.app */;
+			productReference = 5FB227DF1C3C9DAB00F06FA6 /* 36Questions.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -197,14 +197,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Jacqueline Jia";
+				ORGANIZATIONNAME = PsychologyQuestions;
 				TargetAttributes = {
 					5FB227DE1C3C9DAB00F06FA6 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
 			};
-			buildConfigurationList = 5FB227DA1C3C9DAB00F06FA6 /* Build configuration list for PBXProject "Project" */;
+			buildConfigurationList = 5FB227DA1C3C9DAB00F06FA6 /* Build configuration list for PBXProject "36Questions" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -217,7 +217,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5FB227DE1C3C9DAB00F06FA6 /* Project */,
+				5FB227DE1C3C9DAB00F06FA6 /* 36Questions */,
 			);
 		};
 /* End PBXProject section */
@@ -391,7 +391,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jacqueline.Project;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = 36Questions;
 			};
 			name = Debug;
 		};
@@ -403,14 +403,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jacqueline.Project;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = 36Questions;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5FB227DA1C3C9DAB00F06FA6 /* Build configuration list for PBXProject "Project" */ = {
+		5FB227DA1C3C9DAB00F06FA6 /* Build configuration list for PBXProject "36Questions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FB227EF1C3C9DAC00F06FA6 /* Debug */,
@@ -419,7 +419,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5FB227F11C3C9DAC00F06FA6 /* Build configuration list for PBXNativeTarget "Project" */ = {
+		5FB227F11C3C9DAC00F06FA6 /* Build configuration list for PBXNativeTarget "36Questions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FB227F21C3C9DAC00F06FA6 /* Debug */,

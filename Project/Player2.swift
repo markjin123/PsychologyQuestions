@@ -11,7 +11,6 @@ import UIKit
 class Player2: UIViewController {
     var player1Name:String = ""
     var player2Name:String = ""
-    @IBOutlet weak var anything: UILabel!
     @IBOutlet weak var textFieldEnterName: UITextField!
     @IBOutlet weak var labelPlayer2: UILabel!
     @IBOutlet weak var buttonDone: UIButton!
@@ -24,8 +23,6 @@ class Player2: UIViewController {
         textFieldEnterName.placeholder = "Enter Name Here"
         
         view.addGestureRecognizer(tap)
-        
-        anything.text = player1Name
     }
 
     override func didReceiveMemoryWarning() {
