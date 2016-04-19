@@ -12,13 +12,17 @@ class Question12: UIViewController {
     var player1Name:String = ""
     var player2Name:String = ""
     
+    @IBOutlet weak var countDownLabel: UILabel!
+    @IBOutlet weak var timesUp: UILabel!
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var name2: UILabel!
+    @IBOutlet weak var Question12: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        name.text = player2Name
+        self.view.backgroundColor = UIColor(red: 255, green: 153, blue: 102, alpha: 1.0)
     }
 
     override func didReceiveMemoryWarning() {

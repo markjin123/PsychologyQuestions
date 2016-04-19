@@ -10,9 +10,14 @@ import UIKit
 
 class Questions29: UIViewController {
 
+    @IBOutlet weak var countDownLabel: UILabel!
+    @IBOutlet weak var name1: UILabel!
+    @IBOutlet weak var timesUp: UILabel!
+    @IBOutlet weak var name2: UILabel!
+    @IBOutlet weak var Question29: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor(red: 0, green: 230, blue: 153, alpha: 1.0)
         // Do any additional setup after loading the view.
     }
 

@@ -16,7 +16,7 @@ class Instructions_Page: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = UIColor(red: 128, green: 128, blue: 255, alpha: 1)
         labelTitle.text = "Instructions"
         labelParagraph.text = "Grab a friend, lover, partner or family member and start answering some question. Each individual will get 1 minute to answer each of the questions before moving on."
 

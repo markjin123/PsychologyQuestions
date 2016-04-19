@@ -20,6 +20,7 @@ class Player1: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor(red: 0, green: 153, blue: 255, alpha: 1.0)
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "removeKeyboard")
         textFieldEnterName.placeholder = "Enter Name Here"
         

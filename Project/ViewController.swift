@@ -6,6 +6,7 @@
 //  Copyright © 2016 PsychologyQuestions. All rights reserved.
 //
 
+import AudioToolbox
 import UIKit
 
 class ViewController: UIViewController {
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor(red: 230, green: 0, blue: 92, alpha: 0.8)
     }
 
     override func didReceiveMemoryWarning() {
