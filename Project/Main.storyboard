@@ -133,7 +133,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next Question"/>
                                 <connections>
-                                    <segue destination="Oph-8j-mMT" kind="modal" id="i3T-ZU-ur2"/>
+                                    <segue destination="Oph-8j-mMT" kind="modal" identifier="segueChangeQ2" id="i3T-ZU-ur2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -213,6 +213,7 @@
                         <outlet property="countDownLabel" destination="fZn-rm-040" id="VrS-z2-lZk"/>
                         <outlet property="name" destination="TNe-dq-tjE" id="IR0-Du-OMA"/>
                         <outlet property="name2" destination="QQU-J0-KJN" id="Vd7-ra-tHV"/>
+                        <outlet property="nextQuestion" destination="1no-5p-oR4" id="bbt-Is-BOY"/>
                         <outlet property="timesUp" destination="3p2-pp-lus" id="bjw-d7-h9m"/>
                     </connections>
                 </viewController>
@@ -281,6 +282,7 @@
                         <outlet property="countDownLabel" destination="fhf-b9-dJA" id="aj3-rh-8LT"/>
                         <outlet property="name" destination="vCO-6D-1r3" id="QQp-Nm-091"/>
                         <outlet property="name2" destination="fS8-YG-BbV" id="Za4-15-dfj"/>
+                        <outlet property="nextQuestion" destination="EdZ-cp-qoa" id="pZu-ne-OGe"/>
                         <outlet property="timesUp" destination="FYl-EO-ozM" id="I1W-Md-x8A"/>
                     </connections>
                 </viewController>
@@ -349,6 +351,7 @@
                         <outlet property="countDownLabel" destination="c8m-5W-TuS" id="Pwj-fV-359"/>
                         <outlet property="name" destination="fdN-p2-Pct" id="5B4-gE-rZH"/>
                         <outlet property="name2" destination="Qdw-sY-7ht" id="gEe-Ae-a7P"/>
+                        <outlet property="nextQuestion" destination="1VZ-X3-flo" id="KRC-jS-q1R"/>
                         <outlet property="timesUp" destination="OGv-2T-LRY" id="hcK-aH-mjz"/>
                     </connections>
                 </viewController>
@@ -417,6 +420,7 @@
                         <outlet property="countDownLabel" destination="ALW-hG-fTe" id="RCT-b2-Fql"/>
                         <outlet property="name" destination="v5H-hm-uVr" id="APt-2P-Zm7"/>
                         <outlet property="name2" destination="QvV-ff-xgH" id="X5x-wG-k6z"/>
+                        <outlet property="nextQuestion" destination="vyC-do-BrI" id="sIz-QE-PHS"/>
                         <outlet property="timesUp" destination="vie-OH-191" id="aoW-qw-3kP"/>
                     </connections>
                 </viewController>
@@ -485,6 +489,7 @@
                         <outlet property="countDownLabel" destination="bpD-PN-nk5" id="YZ2-8k-1GM"/>
                         <outlet property="name" destination="89e-vo-ZZx" id="n55-7S-iQ4"/>
                         <outlet property="name2" destination="ECF-8U-tb8" id="Spx-lS-tmV"/>
+                        <outlet property="nextQuestion" destination="ozi-Vv-x20" id="qRe-0f-CGy"/>
                         <outlet property="timesUp" destination="jyo-ko-0tn" id="iIM-dm-enZ"/>
                     </connections>
                 </viewController>
@@ -553,6 +558,7 @@
                         <outlet property="countDownLabel" destination="kWx-xN-8SE" id="PwQ-Tc-4hr"/>
                         <outlet property="name" destination="Lfb-vI-yPu" id="EnG-9r-gBj"/>
                         <outlet property="name2" destination="YZh-f1-caw" id="BHQ-ow-P4w"/>
+                        <outlet property="nextQuestion" destination="21P-JC-K0K" id="5bz-Zl-D99"/>
                         <outlet property="timesUp" destination="rLg-21-fF1" id="fwU-PD-rZF"/>
                     </connections>
                 </viewController>
@@ -621,6 +627,7 @@
                         <outlet property="countDownLabel" destination="iYO-PU-ZEj" id="IkU-ew-ilh"/>
                         <outlet property="name" destination="PhJ-hw-Yea" id="5s5-Cq-jn5"/>
                         <outlet property="name2" destination="AoX-X3-4sr" id="e0g-dE-Kwp"/>
+                        <outlet property="nextQuestion" destination="Q0W-gx-OyZ" id="aSj-Lb-rKa"/>
                         <outlet property="timesUp" destination="0eq-0C-nGr" id="3Pl-zd-2Ro"/>
                     </connections>
                 </viewController>
@@ -689,6 +696,7 @@
                         <outlet property="countDownLabel" destination="E9o-Zg-O1d" id="UOV-SD-oPU"/>
                         <outlet property="name" destination="K9n-2y-mxJ" id="Oy2-s6-Jiu"/>
                         <outlet property="name2" destination="E43-WO-VMd" id="kxm-li-35Q"/>
+                        <outlet property="nextQuestion" destination="IMc-w0-4Jj" id="wBu-pq-pEF"/>
                         <outlet property="timesUp" destination="MtJ-m1-uxY" id="efn-cc-Pwg"/>
                     </connections>
                 </viewController>
@@ -757,6 +765,7 @@
                         <outlet property="countDownLabel" destination="a2z-UW-IgT" id="Q90-yk-Xa8"/>
                         <outlet property="name" destination="xdL-Lx-CdP" id="Hel-79-HHL"/>
                         <outlet property="name2" destination="xBb-eL-8BY" id="dvM-jT-bPj"/>
+                        <outlet property="nextQuestion" destination="bux-Si-V3C" id="Acr-Us-jm6"/>
                         <outlet property="timesUp" destination="Aty-yV-crn" id="xfi-yJ-Mo6"/>
                     </connections>
                 </viewController>
@@ -825,6 +834,7 @@
                         <outlet property="countDownLabel" destination="xvo-iD-ntr" id="0KD-l3-RmI"/>
                         <outlet property="name" destination="CK8-U6-GSP" id="q6d-W8-lxc"/>
                         <outlet property="name2" destination="oXd-aA-2cL" id="sy2-2Y-kc9"/>
+                        <outlet property="nextQuestion" destination="tI9-zL-vyO" id="SFg-Pu-S2n"/>
                         <outlet property="timesUp" destination="1mQ-Lo-3OJ" id="76J-m1-bNG"/>
                     </connections>
                 </viewController>
@@ -893,6 +903,7 @@
                         <outlet property="countDownLabel" destination="UZI-5R-J6F" id="S2t-Kq-aOf"/>
                         <outlet property="name" destination="rnT-CQ-Fr7" id="Z52-3d-E6i"/>
                         <outlet property="name2" destination="oYJ-VA-8Xm" id="p9o-Na-6Yh"/>
+                        <outlet property="nextQuestion" destination="y6U-Nn-gun" id="bfC-pc-CeH"/>
                         <outlet property="timesUp" destination="GYf-Gg-AZ8" id="9EJ-N8-A1H"/>
                     </connections>
                 </viewController>
@@ -961,6 +972,7 @@
                         <outlet property="countDownLabel" destination="IhY-Xz-PaG" id="gr7-dk-pjh"/>
                         <outlet property="name" destination="yI5-m8-wqJ" id="RVf-IF-Lpa"/>
                         <outlet property="name2" destination="ft0-op-42c" id="Fw3-oK-TSP"/>
+                        <outlet property="nextQuestion" destination="tJm-3X-cM0" id="xov-vG-rzM"/>
                         <outlet property="timesUp" destination="2Xz-3Z-7uq" id="VcP-El-DlU"/>
                     </connections>
                 </viewController>
@@ -1029,6 +1041,7 @@
                         <outlet property="countDownLabel" destination="Tb0-SJ-EEu" id="4Nd-ED-DbK"/>
                         <outlet property="name" destination="m4d-Wc-oY1" id="T1l-Gq-BWb"/>
                         <outlet property="name2" destination="wH0-vI-MYb" id="bxC-3V-hp2"/>
+                        <outlet property="nextQuestion" destination="lyX-bg-HHO" id="6qC-xV-jl5"/>
                         <outlet property="timesUp" destination="wma-5g-D57" id="d9b-NE-2ua"/>
                     </connections>
                 </viewController>
@@ -1049,7 +1062,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next Question"/>
                                 <connections>
-                                    <segue destination="NXi-Gr-iLr" kind="modal" id="s1k-3g-40i"/>
+                                    <segue destination="NXi-Gr-iLr" kind="modal" identifier="segueChangeQ30" id="s1k-3g-40i"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29. Share with your partner an embarrassing moment in your life." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rEd-vh-I7g">
@@ -1093,8 +1106,9 @@
                     <connections>
                         <outlet property="Question29" destination="rEd-vh-I7g" id="qLM-wk-79H"/>
                         <outlet property="countDownLabel" destination="dje-DI-cf5" id="GNA-5Y-VmW"/>
-                        <outlet property="name1" destination="TUp-sJ-6Xz" id="YFE-K1-tld"/>
+                        <outlet property="name" destination="TUp-sJ-6Xz" id="SR9-Mk-3kg"/>
                         <outlet property="name2" destination="ny1-Zi-EvV" id="udY-bI-iTE"/>
+                        <outlet property="nextQuestion" destination="eCT-tg-a11" id="u88-Aw-Q1d"/>
                         <outlet property="timesUp" destination="GYX-Jb-QxE" id="oqs-v3-GZU"/>
                     </connections>
                 </viewController>
@@ -1122,7 +1136,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next Question"/>
                                 <connections>
-                                    <segue destination="xJo-CE-tAG" kind="modal" id="sc8-DA-fv0"/>
+                                    <segue destination="xJo-CE-tAG" kind="modal" identifier="segueChangeQ32" id="sc8-DA-fv0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player2 Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wfc-RH-ozj">
@@ -1161,6 +1175,7 @@
                         <outlet property="countDownLabel" destination="3rf-it-FWi" id="ZeA-Rh-An3"/>
                         <outlet property="name" destination="eNb-oJ-iBR" id="LZt-0H-rbr"/>
                         <outlet property="name2" destination="wfc-RH-ozj" id="kX7-7r-g1z"/>
+                        <outlet property="nextQuestion" destination="cmr-RC-fPT" id="WSe-dR-9DY"/>
                         <outlet property="timesUp" destination="sxp-QW-7qt" id="LgC-tQ-kun"/>
                     </connections>
                 </viewController>
@@ -1189,7 +1204,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next Question"/>
                                 <connections>
-                                    <segue destination="mAY-Ii-VNM" kind="modal" id="Pwf-yM-UjP"/>
+                                    <segue destination="mAY-Ii-VNM" kind="modal" identifier="segueChangeQ34" id="Pwf-yM-UjP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player2 Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uIb-lt-fOL">
@@ -1228,6 +1243,7 @@
                         <outlet property="countDownLabel" destination="MDi-KF-9Bp" id="Fa5-Hr-Qea"/>
                         <outlet property="name" destination="5R7-px-Sf0" id="F4B-rY-Cec"/>
                         <outlet property="name2" destination="uIb-lt-fOL" id="ima-Ja-rSh"/>
+                        <outlet property="nextQuestion" destination="02P-8g-dNK" id="JxZ-lh-9R7"/>
                         <outlet property="timesUp" destination="vGy-GA-SS7" id="JNH-Yg-mOX"/>
                     </connections>
                 </viewController>
@@ -1248,7 +1264,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next Question"/>
                                 <connections>
-                                    <segue destination="ZDs-Eo-Qhb" kind="modal" id="lVg-JN-aMe"/>
+                                    <segue destination="ZDs-Eo-Qhb" kind="modal" identifier="segueChangeQ36" id="lVg-JN-aMe"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player2 Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lse-8s-j7T">
@@ -1294,6 +1310,7 @@
                         <outlet property="countDownLabel" destination="QId-GE-Fi0" id="2Yr-2O-3EP"/>
                         <outlet property="name" destination="2eY-fG-H2W" id="UGU-27-NBf"/>
                         <outlet property="name2" destination="Lse-8s-j7T" id="Uem-pG-zBl"/>
+                        <outlet property="nextQuestion" destination="1It-nc-Bn2" id="c6N-vY-y8h"/>
                         <outlet property="timesUp" destination="xue-IY-i1h" id="NTc-qv-61b"/>
                     </connections>
                 </viewController>
@@ -1362,6 +1379,7 @@
                         <outlet property="countDownLabel" destination="WyL-Zw-4sb" id="YO8-1A-HYd"/>
                         <outlet property="name" destination="fbP-DQ-FL5" id="Zz7-FM-d3p"/>
                         <outlet property="name2" destination="uWy-cE-CLJ" id="JZg-wQ-bNq"/>
+                        <outlet property="nextQuestion" destination="itB-h5-2Wy" id="KqB-DY-cc3"/>
                         <outlet property="timesUp" destination="j04-wY-EgL" id="6op-yA-LiS"/>
                     </connections>
                 </viewController>
@@ -1430,6 +1448,7 @@
                         <outlet property="countDownLabel" destination="tXN-Pc-tss" id="dV0-Mt-Iab"/>
                         <outlet property="name" destination="xVe-fx-Tm8" id="Qzi-9x-1mL"/>
                         <outlet property="name2" destination="agg-TJ-rcH" id="nUu-kt-CeE"/>
+                        <outlet property="nextQuestion" destination="ahs-lA-cw3" id="Rgi-kT-0B9"/>
                         <outlet property="timesUp" destination="6Tn-mz-g8L" id="z1J-wS-WLA"/>
                     </connections>
                 </viewController>
@@ -1498,6 +1517,7 @@
                         <outlet property="countDownLabel" destination="qkh-jm-aAn" id="bGK-kr-TE1"/>
                         <outlet property="name" destination="3ji-ml-ne1" id="4qD-WF-bhe"/>
                         <outlet property="name2" destination="CvW-ZW-Po2" id="mtN-cq-ayJ"/>
+                        <outlet property="nextQuestion" destination="YMx-H0-BKF" id="v97-fU-SRK"/>
                         <outlet property="timesUp" destination="zOa-mf-nj7" id="NhB-PG-OKg"/>
                     </connections>
                 </viewController>
@@ -1566,6 +1586,7 @@
                         <outlet property="countDownLabel" destination="QB0-QI-kZQ" id="w0N-ho-iQM"/>
                         <outlet property="name" destination="Xel-uX-SkV" id="eqz-jF-soj"/>
                         <outlet property="name2" destination="0iC-13-8gO" id="vC3-fB-c5S"/>
+                        <outlet property="nextQuestion" destination="AdS-wp-EFQ" id="s5v-BE-k7J"/>
                         <outlet property="timesUp" destination="sUJ-Sz-kw5" id="gh6-eH-fyp"/>
                     </connections>
                 </viewController>
@@ -1634,6 +1655,7 @@
                         <outlet property="countDownLabel" destination="8K6-Wl-44Y" id="ewh-df-1Ip"/>
                         <outlet property="name" destination="VNb-rY-76S" id="wxR-BB-Ges"/>
                         <outlet property="name2" destination="6Nf-qa-ZT8" id="OlE-qe-6YX"/>
+                        <outlet property="nextQuestion" destination="I9j-5e-PCX" id="9m6-F0-MUJ"/>
                         <outlet property="timesUp" destination="AMW-WG-zkI" id="Em2-9X-PXp"/>
                     </connections>
                 </viewController>
@@ -1702,6 +1724,7 @@
                         <outlet property="countDownLabel" destination="rWu-Rv-ipQ" id="PDa-4C-18g"/>
                         <outlet property="name" destination="S9p-kA-iSf" id="pgS-w5-thG"/>
                         <outlet property="name2" destination="NAp-6H-mfE" id="JwI-gk-jN3"/>
+                        <outlet property="nextQuestion" destination="567-lC-h3a" id="TgB-1b-Axu"/>
                         <outlet property="timesUp" destination="vbf-yX-FGm" id="w4T-Bd-fjh"/>
                     </connections>
                 </viewController>
@@ -1770,6 +1793,7 @@
                         <outlet property="countDownLabel" destination="0Hh-dH-e1C" id="M7Z-uu-YeP"/>
                         <outlet property="name" destination="Rbp-3B-zFy" id="3LK-yf-u2c"/>
                         <outlet property="name2" destination="RXx-4v-9fh" id="gTc-5B-Dvz"/>
+                        <outlet property="nextQuestion" destination="kzz-4G-jGd" id="ASh-09-XP7"/>
                         <outlet property="timesUp" destination="3pd-VU-ec0" id="j2G-c4-7qo"/>
                     </connections>
                 </viewController>
@@ -1838,6 +1862,7 @@
                         <outlet property="countDownLabel" destination="0Ps-wT-MVf" id="6ry-Jl-FG2"/>
                         <outlet property="name" destination="jDT-9f-EyB" id="hla-V4-FLN"/>
                         <outlet property="name2" destination="u8I-Cc-DXd" id="wBT-rz-YMG"/>
+                        <outlet property="nextQuestion" destination="qJ1-yO-LTt" id="JdK-jE-KHO"/>
                         <outlet property="timesUp" destination="Jpt-hR-VRm" id="4cs-Zc-MkZ"/>
                     </connections>
                 </viewController>
@@ -1906,6 +1931,7 @@
                         <outlet property="countDownLabel" destination="3Ky-wc-XEc" id="OLw-Qt-HfK"/>
                         <outlet property="name" destination="ZcC-Sp-mPx" id="jfX-xZ-9bR"/>
                         <outlet property="name2" destination="XK3-ef-lJJ" id="4Ob-Fa-qHe"/>
+                        <outlet property="nextQuestion" destination="Epy-Ei-ZFD" id="iAv-hH-w4d"/>
                         <outlet property="timesUp" destination="gej-pB-y60" id="wQ9-nw-5yF"/>
                     </connections>
                 </viewController>
@@ -1926,7 +1952,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next Question"/>
                                 <connections>
-                                    <segue destination="LNd-mT-6A8" kind="modal" id="bo1-AK-eYt"/>
+                                    <segue destination="LNd-mT-6A8" kind="modal" identifier="segueChangeQ29" id="bo1-AK-eYt"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player2 Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="74I-hG-W2j">
@@ -1974,6 +2000,7 @@
                         <outlet property="countDownLabel" destination="Ko7-yu-mf7" id="v8l-nS-5QI"/>
                         <outlet property="name" destination="Ioo-cP-a6h" id="obf-2K-Vx6"/>
                         <outlet property="name2" destination="74I-hG-W2j" id="rF4-xn-sU5"/>
+                        <outlet property="nextQuestion" destination="96G-mr-L8e" id="AiW-Qd-dua"/>
                         <outlet property="timesUp" destination="Icp-vY-JpJ" id="ZSg-sV-d4y"/>
                     </connections>
                 </viewController>
@@ -1994,7 +2021,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next Question"/>
                                 <connections>
-                                    <segue destination="9J6-Zr-s1L" kind="modal" id="Zbu-sr-3rO"/>
+                                    <segue destination="9J6-Zr-s1L" kind="modal" identifier="segueChangeQ31" id="Zbu-sr-3rO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30. When did you last cry in front of another person? By yourself?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KbH-KI-gaA">
@@ -2040,6 +2067,7 @@
                         <outlet property="countDownLabel" destination="UUU-OX-NW3" id="dTj-Qv-FJD"/>
                         <outlet property="name" destination="141-DT-v0n" id="Fue-qM-4pe"/>
                         <outlet property="name2" destination="28S-xI-Uz6" id="rM2-Xr-73l"/>
+                        <outlet property="nextQuestion" destination="SuJ-Ua-bUX" id="WJK-iA-9OV"/>
                         <outlet property="timesUp" destination="VtB-ZS-wu6" id="Pf5-rV-Odq"/>
                     </connections>
                 </viewController>
@@ -2060,7 +2088,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next Question"/>
                                 <connections>
-                                    <segue destination="EpM-jp-SXn" kind="modal" id="4hy-S6-eJf"/>
+                                    <segue destination="EpM-jp-SXn" kind="modal" identifier="segueChangeQ33" id="4hy-S6-eJf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player2 Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LIO-dw-ctD">
@@ -2106,6 +2134,7 @@
                         <outlet property="countDownLabel" destination="Jf6-fV-Yix" id="6GR-Tt-E7a"/>
                         <outlet property="name" destination="ytr-hs-rCl" id="bKh-q6-3oQ"/>
                         <outlet property="name2" destination="LIO-dw-ctD" id="f3J-gw-dNo"/>
+                        <outlet property="nextQuestion" destination="wmr-vt-Xio" id="H9y-Mk-dmq"/>
                         <outlet property="timesUp" destination="NBI-jR-iiw" id="p76-qU-UwK"/>
                     </connections>
                 </viewController>
@@ -2134,7 +2163,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next Question"/>
                                 <connections>
-                                    <segue destination="e0U-nh-l8H" kind="modal" id="3HB-Zb-PVh"/>
+                                    <segue destination="e0U-nh-l8H" kind="modal" identifier="segueChangeQ35" id="3HB-Zb-PVh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player2 Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="l55-FU-xS5">
@@ -2171,8 +2200,9 @@
                     <connections>
                         <outlet property="Question34" destination="HkR-3n-PXc" id="H3p-fF-ayF"/>
                         <outlet property="countDownLabel" destination="Lj4-th-YqY" id="ots-zW-Vt9"/>
-                        <outlet property="name1" destination="Lob-dG-rNX" id="PVW-IC-CDH"/>
+                        <outlet property="name" destination="Lob-dG-rNX" id="GOn-M0-Ztu"/>
                         <outlet property="name2" destination="l55-FU-xS5" id="Yze-78-UWJ"/>
+                        <outlet property="nextQuestion" destination="dYb-RL-4pm" id="egv-kp-vmL"/>
                         <outlet property="timesUp" destination="Ncv-NC-bvm" id="72r-fo-4ha"/>
                     </connections>
                 </viewController>
@@ -2230,7 +2260,7 @@
                     <connections>
                         <outlet property="Question36" destination="8bP-Ef-eFw" id="4gp-01-qJd"/>
                         <outlet property="countDownLabel" destination="gVE-M0-1oK" id="pDX-lu-pYL"/>
-                        <outlet property="name1" destination="Ceh-Ui-gsP" id="cIk-wA-ryI"/>
+                        <outlet property="name" destination="Ceh-Ui-gsP" id="o1x-2q-50K"/>
                         <outlet property="name2" destination="i6y-y7-vS7" id="eXY-mK-ZN8"/>
                         <outlet property="timesUp" destination="cUh-PU-v6U" id="a76-PE-8t9"/>
                     </connections>
@@ -2298,6 +2328,7 @@
                         <outlet property="countDownLabel" destination="g9W-TH-MH0" id="DUf-wp-tEC"/>
                         <outlet property="name" destination="X2K-k8-VJ6" id="8uG-Xn-Y7E"/>
                         <outlet property="name2" destination="5RC-ty-Gtl" id="Mrc-NF-kCM"/>
+                        <outlet property="nextQuestion" destination="H3z-Vj-vKh" id="hHU-Fw-PQQ"/>
                         <outlet property="timesUp" destination="2u6-Qh-FUW" id="PIq-HM-REk"/>
                     </connections>
                 </viewController>
@@ -2352,7 +2383,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4ig-ce-KmL">
-                                <rect key="frame" x="235" y="325" width="62" height="64"/>
+                                <rect key="frame" x="234" y="323" width="62" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -2367,7 +2398,7 @@
                         <outlet property="countDownLabel" destination="4ig-ce-KmL" id="zds-Ht-7aq"/>
                         <outlet property="name" destination="caJ-zZ-51V" id="84p-yh-nSx"/>
                         <outlet property="name2" destination="5eL-TZ-Gg6" id="s3q-0D-MBh"/>
-                        <outlet property="nextQuestion" destination="pGu-GE-AKN" id="STF-XM-15j"/>
+                        <outlet property="nextQuestion" destination="pGu-GE-AKN" id="S3h-Uk-Cwm"/>
                         <outlet property="timesUp" destination="Gam-VH-TiA" id="yIt-xI-SJE"/>
                     </connections>
                 </viewController>
@@ -2436,6 +2467,7 @@
                         <outlet property="countDownLabel" destination="sDM-Kh-nuE" id="heT-yY-vZa"/>
                         <outlet property="name" destination="W5O-4Q-vBY" id="2Fk-Cv-4Fi"/>
                         <outlet property="name2" destination="3EX-Q4-eTo" id="m6C-td-vQv"/>
+                        <outlet property="nextQuestion" destination="tZ1-Yv-PNM" id="4OL-tx-WDa"/>
                         <outlet property="timesUp" destination="xlS-gQ-QbK" id="ox6-Zl-7Mw"/>
                     </connections>
                 </viewController>
@@ -2504,6 +2536,7 @@
                         <outlet property="countDownLabel" destination="DFP-fq-lNE" id="M1a-dW-S1d"/>
                         <outlet property="name" destination="JxM-dp-Az2" id="vvI-UH-IWK"/>
                         <outlet property="name2" destination="Twl-p2-aHZ" id="h4G-YH-pLJ"/>
+                        <outlet property="nextQuestion" destination="fBQ-Pt-paf" id="9IO-O1-U55"/>
                         <outlet property="timesUp" destination="ddH-gt-tNJ" id="P2T-C7-6lq"/>
                     </connections>
                 </viewController>
