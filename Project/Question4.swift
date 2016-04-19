@@ -14,11 +14,9 @@ class Question4: UIViewController {
     
     @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var timesUp: UILabel!
-    @IBOutlet weak var name1: UILabel!
     @IBOutlet weak var name2: UILabel!
     @IBOutlet weak var Question4: UILabel!
     @IBOutlet weak var name: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -13,10 +13,11 @@ class Question3: UIViewController {
     var player2Name:String = ""
     
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var name2: UILabel!
     @IBOutlet weak var timesUp: UILabel!
     @IBOutlet weak var countDownLabel: UILabel!
-    @IBOutlet weak var name2: UILabel!
     @IBOutlet weak var Question3: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

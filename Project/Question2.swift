@@ -21,7 +21,7 @@ class Question2: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor(red: 153, green: 51, blue: 255, alpha: 1.0)
-        question2.sizeToFit()
+        Question2.sizeToFit()
         name.text = player2Name
     }
 
@@ -37,7 +37,7 @@ class Question2: UIViewController {
 //        name.center.x -= view.bounds.width
         
         //this is to make the alpha of the Question1 = 0 so we can improve its alpha back to 1 for the animation
-        question2.alpha -= 0
+        Question2.alpha -= 0
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -50,7 +50,7 @@ class Question2: UIViewController {
         
         
         //this line is how the we animate the alpha of the question
-        UIView.animateWithDuration(0.3, delay: 1.5, options: [], animations: {self.question2.alpha += 1}, completion: nil)
+        UIView.animateWithDuration(0.3, delay: 1.5, options: [], animations: {self.Question2.alpha += 1}, completion: nil)
         
         //after the timer is up it will go to the function enableTouch which enables the use to touch the screen
         //this function is how you delay things and it this as its parameters
@@ -58,15 +58,10 @@ class Question2: UIViewController {
         //NSTimer.scheduledTimerWithTimeInterval("how long it is delayed", target: self, selector: "the function that you hope to run when the delay is done", userInfo: nil, repeats: "true if you want to repeat and delay the same amount of time again, false if you don't"))
         //var activePause = NSTimer.scheduledTimerWithTimeInterval(123, target: self, selector: ("enableTouch"), userInfo: nil, repeats: false)
     }
-
-    func enableTouch(){
-        //this line says that everytime someone touches the screen, it will go to the function nextQuestion
-        var humanTap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "nextQuestion")
-    }
     
     
     func timerInit(timer:NSTimer){
-        var keepCount = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: ("updateTimer:"), userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: ("updateTimer:"), userInfo: nil, repeats: true)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -76,16 +71,5 @@ class Question2: UIViewController {
             svc.player2Name = self.player2Name
         }
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

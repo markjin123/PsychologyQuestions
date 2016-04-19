@@ -18,8 +18,6 @@ class Question11: UIViewController {
     @IBOutlet weak var name2: UILabel!
     @IBOutlet weak var Question11: UILabel!
     
-    @IBOutlet weak var name: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

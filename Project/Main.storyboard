@@ -211,8 +211,8 @@
                     <connections>
                         <outlet property="Question3" destination="glg-WK-ZLj" id="kSJ-wq-lVv"/>
                         <outlet property="countDownLabel" destination="fZn-rm-040" id="VrS-z2-lZk"/>
-                        <outlet property="name" destination="QQU-J0-KJN" id="E2E-Af-HiH"/>
-                        <outlet property="name2" destination="QQU-J0-KJN" id="atB-0U-uta"/>
+                        <outlet property="name" destination="TNe-dq-tjE" id="IR0-Du-OMA"/>
+                        <outlet property="name2" destination="QQU-J0-KJN" id="Vd7-ra-tHV"/>
                         <outlet property="timesUp" destination="3p2-pp-lus" id="bjw-d7-h9m"/>
                     </connections>
                 </viewController>
@@ -2434,7 +2434,7 @@
                     <connections>
                         <outlet property="Question4" destination="Brc-1A-3K8" id="jpB-v4-FmL"/>
                         <outlet property="countDownLabel" destination="sDM-Kh-nuE" id="heT-yY-vZa"/>
-                        <outlet property="name1" destination="W5O-4Q-vBY" id="FRM-j1-KLv"/>
+                        <outlet property="name" destination="W5O-4Q-vBY" id="2Fk-Cv-4Fi"/>
                         <outlet property="name2" destination="3EX-Q4-eTo" id="m6C-td-vQv"/>
                         <outlet property="timesUp" destination="xlS-gQ-QbK" id="ox6-Zl-7Mw"/>
                     </connections>

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/Question7.swift"
-            timestampString = "482705188.518473"
+            timestampString = "482723175.142797"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "didReceiveMemoryWarning()"
             landmarkType = "5">
          </BreakpointContent>
@@ -134,11 +134,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/Question3.swift"
-            timestampString = "482719856.995477"
+            timestampString = "482723175.142797"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
             landmarkName = "Question3"
             landmarkType = "3">
          </BreakpointContent>
@@ -156,6 +156,84 @@
             startingLineNumber = "13"
             endingLineNumber = "13"
             landmarkName = "Question24"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_6Questions.Question24.player2Name.setter : Swift.String"
+                  moduleName = "36Questions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/markjin/Desktop/PsychologyQuestions/Project/Question24.swift"
+                  timestampString = "482723176.170183"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_6Questions.Question24.player2Name.materializeForSet : Swift.String"
+                  moduleName = "36Questions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/markjin/Desktop/PsychologyQuestions/Project/Question24.swift"
+                  timestampString = "482723176.170398"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_6Questions.Question24.init (_6Questions.Question24.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; _6Questions.Question24"
+                  moduleName = "36Questions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/markjin/Desktop/PsychologyQuestions/Project/Question24.swift"
+                  timestampString = "482723176.17061"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "179">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_6Questions.Question24.init (_6Questions.Question24.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;_6Questions.Question24&gt;"
+                  moduleName = "36Questions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/markjin/Desktop/PsychologyQuestions/Project/Question24.swift"
+                  timestampString = "482723176.170812"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project/Question11.swift"
+            timestampString = "482722993.282408"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "Question11"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
