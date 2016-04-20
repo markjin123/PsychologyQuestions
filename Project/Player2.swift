@@ -18,7 +18,6 @@ class Player2: UIViewController,UIImagePickerControllerDelegate, UINavigationCon
     @IBOutlet weak var ProfilePicture: UILabel!
     @IBOutlet weak var PhotoLibrary: UIButton!
     @IBOutlet weak var DisplayPhoto: UIImageView!
-    
     @IBOutlet weak var nextQuestion: UIButton!
     @IBOutlet weak var TakePhoto: UIButton!
     @IBAction func PhotoLibrary(sender: AnyObject) {
@@ -40,15 +39,16 @@ class Player2: UIViewController,UIImagePickerControllerDelegate, UINavigationCon
         self.view.backgroundColor = UIColor(red: CGFloat(230)/255, green: CGFloat(115)/255, blue: CGFloat(0)/255, alpha: CGFloat(1))
         // Do any additional setup after loading the view.
         ProfilePicture.sizeToFit()
-        TakePhoto.sizeToFit()
-        TakePhoto.sizeToFit()
+        nextQuestion.alpha = 0
+        nextQuestion.enabled = false
         DisplayPhoto.center.x = self.view.bounds.width/2
         ProfilePicture.center.x = self.view.bounds.width/2
         TakePhoto.center.x = self.view.bounds.width/4
         PhotoLibrary.center.x = self.view.bounds.width*3/4
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "removeKeyboard")
         textFieldEnterName.placeholder = "Enter Name Here"
-        DisplayPhoto.image = player1image
+        nextQuestion.center.x = CGFloat(Int(self.view.bounds.width) - 30)
+        nextQuestion.center.y = CGFloat(Int(self.view.bounds.height) - 50)
         view.addGestureRecognizer(tap)
     }
 
@@ -71,7 +71,12 @@ class Player2: UIViewController,UIImagePickerControllerDelegate, UINavigationCon
         super.viewDidAppear(animated)
         UIView.animateWithDuration(0.5, delay: 0.5, options: [], animations: {self.textFieldEnterName.alpha = 1}, completion: nil)
         UIView.animateWithDuration(0.5, delay: 0, options: [], animations: {self.labelPlayer2.alpha = 1}, completion: nil)
+        UIView.animateWithDuration(0.5, delay: 1, options: [], animations: {self.nextQuestion.alpha = 1}, completion: nil)
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "NextQuestion", userInfo: nil, repeats: false)
         
+    }
+    func NextQuestion(){
+        self.nextQuestion.enabled = true
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "segueChangeQ1"){

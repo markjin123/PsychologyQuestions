@@ -39,14 +39,14 @@ class Player1: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor(red: CGFloat(0), green: CGFloat(153)/255, blue: CGFloat(255)/255, alpha: CGFloat(1))
         ProfilePicture.sizeToFit()
-        TakePhoto.sizeToFit()
         DisplayPhoto.center.x = self.view.bounds.width/2
         ProfilePicture.center.x = self.view.bounds.width/2
         TakePhoto.center.x = self.view.bounds.width/4
         PhotoLibrary.center.x = self.view.bounds.width*3/4
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "removeKeyboard")
         textFieldEnterName.placeholder = "Enter Name Here"
-        
+        nextQuestion.center.x = CGFloat(Int(self.view.bounds.width) - 30)
+        nextQuestion.center.y = CGFloat(Int(self.view.bounds.height) - 50)
         view.addGestureRecognizer(tap)
     }
 
@@ -70,6 +70,12 @@ class Player1: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         super.viewDidAppear(animated)
         UIView.animateWithDuration(0.5, delay: 0.5, options: [], animations: {self.textFieldEnterName.alpha = 1}, completion: nil)
         UIView.animateWithDuration(0.5, delay: 0, options: [], animations: {self.labelPlayer1.alpha = 1}, completion: nil)
+        UIView.animateWithDuration(0.5, delay: 1, options: [], animations: {self.nextQuestion.alpha = 1}, completion: nil)
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "NextQuestion", userInfo: nil, repeats: false)
+    }
+    
+    func NextQuestion(){
+        self.nextQuestion.enabled = true
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

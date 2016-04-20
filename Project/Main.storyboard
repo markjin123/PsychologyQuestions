@@ -84,20 +84,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ldo-57-PMf">
-                                <rect key="frame" x="175" y="284" width="92" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ldo-57-PMf">
+                                <rect key="frame" x="25" y="279" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Photo Gallary"/>
+                                <state key="normal" title="Photo Gallary" image="PhotoGallery"/>
                                 <connections>
                                     <action selector="PhotoLibrary:" destination="nSH-wz-hwW" eventType="touchUpInside" id="nQ1-zc-2OA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0W6-HV-9nh">
-                                <rect key="frame" x="23" y="284" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Photo"/>
-                                <connections>
-                                    <action selector="TakePhoto:" destination="nSH-wz-hwW" eventType="touchUpInside" id="hNC-ae-G0j"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Sh6-L8-FcH">
@@ -107,12 +99,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="urk-P3-WL2">
-                                <rect key="frame" x="241" y="498" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zKg-ov-IW3">
+                                <rect key="frame" x="243" y="513" width="62" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="next"/>
+                                <state key="normal" title="Next" backgroundImage="ButtonBackground">
+                                    <color key="titleColor" red="1" green="0.86306060029999998" blue="0.3669315809" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0W6-HV-9nh">
+                                <rect key="frame" x="25" y="279" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Photo" image="TakePhoto"/>
                                 <connections>
-                                    <segue destination="c3L-43-SRA" kind="modal" identifier="segueChangeQ1" id="DNo-Z4-GuZ"/>
+                                    <action selector="TakePhoto:" destination="nSH-wz-hwW" eventType="touchUpInside" id="hNC-ae-G0j"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -124,7 +123,7 @@
                         <outlet property="ProfilePicture" destination="Sh6-L8-FcH" id="vYE-oh-095"/>
                         <outlet property="TakePhoto" destination="0W6-HV-9nh" id="tlz-dg-VRM"/>
                         <outlet property="labelPlayer2" destination="vxK-5O-mLX" id="wpL-Th-mQH"/>
-                        <outlet property="nextQuestion" destination="urk-P3-WL2" id="uVd-RU-Elv"/>
+                        <outlet property="nextQuestion" destination="zKg-ov-IW3" id="FVS-YA-gVw"/>
                         <outlet property="textFieldEnterName" destination="gIA-lx-PAo" id="kow-u9-DJG"/>
                     </connections>
                 </viewController>
@@ -158,12 +157,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1bs-AM-yES">
                                 <rect key="frame" x="127" y="325" width="62" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="35"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w1e-pW-itp">
-                                <rect key="frame" x="26" y="20" width="320" height="98"/>
+                                <rect key="frame" x="20" y="20" width="320" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">1. Given the choice of anyone in the world, whom would you want as a dinner guest?
 </string>
@@ -193,7 +192,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wEj-Kb-2Dv">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="-1" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="Oph-8j-mMT" kind="modal" identifier="segueChangeQ2" id="KYd-LS-pQ7"/>
@@ -1009,7 +1008,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">21. What roles do love and affection play in your life?
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1749,6 +1748,7 @@
                     </view>
                     <connections>
                         <outlet property="Continue" destination="aUF-xP-cks" id="itI-3s-vcb"/>
+                        <outlet property="DisplayPhoto" destination="8Bj-4T-uRn" id="MLJ-8l-KZQ"/>
                         <outlet property="DisplayPhoto2" destination="6Nr-3b-iNf" id="hiz-Sh-IiP"/>
                         <outlet property="Question10" destination="Zw4-VE-Blj" id="69t-cm-Yw7"/>
                         <outlet property="countDownLabel" destination="WyL-Zw-4sb" id="YO8-1A-HYd"/>
@@ -2205,7 +2205,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">22. Alternate sharing something you consider a positive characteristic of your partner. Share a total of five items.
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -3273,22 +3273,18 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UUr-nU-M54">
-                                <rect key="frame" x="171" y="284" width="92" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UUr-nU-M54">
+                                <rect key="frame" x="195" y="279" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Photo Gallary"/>
+                                <state key="normal" title="Photo Gallary" image="PhotoGallery"/>
                                 <connections>
                                     <action selector="PhotoGallery:" destination="zAX-lJ-gnA" eventType="touchUpInside" id="nsX-g4-9ov"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qb2-By-TXd">
-                                <rect key="frame" x="65" y="284" width="41" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MissingImage" id="ouZ-BX-ZRS">
+                                <rect key="frame" x="85" y="322" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Photo"/>
-                                <connections>
-                                    <action selector="TakePhoto:" destination="zAX-lJ-gnA" eventType="touchUpInside" id="ZdG-Rz-2ve"/>
-                                </connections>
-                            </button>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wm6-jR-462">
                                 <rect key="frame" x="85" y="252" width="230" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3297,17 +3293,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hPa-eb-KAy">
-                                <rect key="frame" x="261" y="518" width="32" height="30"/>
+                                <rect key="frame" x="244" y="519" width="62" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
+                                <state key="normal" title="Next" backgroundImage="ButtonBackground">
+                                    <color key="titleColor" red="1" green="0.86306060034407273" blue="0.36693158089453082" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="nSH-wz-hwW" kind="modal" identifier="segueChange" id="e1I-8Z-2hL"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MissingImage" id="ouZ-BX-ZRS">
-                                <rect key="frame" x="85" y="322" width="150" height="150"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qb2-By-TXd">
+                                <rect key="frame" x="53" y="279" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Photo" image="TakePhoto"/>
+                                <connections>
+                                    <action selector="TakePhoto:" destination="zAX-lJ-gnA" eventType="touchUpInside" id="ZdG-Rz-2ve"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -3328,9 +3330,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ButtonBackground" width="300" height="96"/>
         <image name="FacebookShare" width="420" height="100"/>
         <image name="MissingImage" width="749" height="946"/>
+        <image name="PhotoGallery" width="320" height="320"/>
         <image name="StartButton" width="600" height="192"/>
+        <image name="TakePhoto" width="626" height="626"/>
         <image name="TwitterShare" width="357" height="78"/>
         <image name="logo" width="177" height="106"/>
     </resources>

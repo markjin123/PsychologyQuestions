@@ -32,13 +32,14 @@ class Question35: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: CGFloat(0), green: CGFloat(153)/255, blue: CGFloat(153)/255, alpha: 1.0)
+        Question35.center.x = self.view.bounds.width/2
         Question35.sizeToFit()
         name.text = player1Name
         name2.text = player2Name
         name.sizeToFit()
         name2.sizeToFit()
         Question35.lineBreakMode = NSLineBreakMode.ByWordWrapping
-        Question35.center.x = self.view.bounds.width/2
+        
         nextQuestion.enabled = false
         nextQuestion.alpha = 0
         timesUp.textColor = UIColor(red: CGFloat(255)/255, green: CGFloat(0), blue: CGFloat(0), alpha: 1.0)
@@ -58,7 +59,7 @@ class Question35: UIViewController {
         DisplayPhoto.center.x = -self.view.bounds.width/2
         DisplayPhoto2.center.x = -self.view.bounds.width/2
         DisplayPhoto.image = player1image
-        DisplayPhoto.image = player2image
+        DisplayPhoto2.image = player2image
 
     }
     
@@ -138,7 +139,7 @@ class Question35: UIViewController {
         UIView.animateWithDuration(0.5,delay:3,options:[], animations:{self.name2.center.x += self.view.bounds.width}, completion:nil)
         UIView.animateWithDuration(0.5, delay: 1, options: [], animations: {self.DisplayPhoto2.center.x += self.view.bounds.width}, completion: nil)
         UIView.animateWithDuration(0.5, delay: 3.0, options: [], animations: {self.DisplayPhoto2.center.x += self.view.bounds.width}, completion: nil)
-        NSTimer.scheduledTimerWithTimeInterval(2.1, target: self, selector: ("timer2Init"), userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(3.5, target: self, selector: ("timer2Init"), userInfo: nil, repeats: false)
     }
     
     func timer2Init(){
