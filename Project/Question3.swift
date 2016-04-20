@@ -31,7 +31,7 @@ class Question3: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor(red: CGFloat(255)/255, green: CGFloat(102)/255, blue: CGFloat(153)/255, alpha: CGFloat(1.0))
+        self.view.backgroundColor = UIColor(red: CGFloat(255)/255, green: CGFloat(153)/255, blue: CGFloat(204)/255, alpha: CGFloat(1.0))
         Question3.center.x = self.view.bounds.width/2
         Question3.lineBreakMode = NSLineBreakMode.ByWordWrapping
         Question3.sizeToFit()

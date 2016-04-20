@@ -43,7 +43,7 @@ class Question9: UIViewController {
         
         nextQuestion.enabled = false
         nextQuestion.alpha = 0
-        timesUp.textColor = UIColor(red: CGFloat(255)/255, green: CGFloat(0), blue: CGFloat(0), alpha: 1.0)
+        timesUp.textColor = UIColor(red: CGFloat(153)/255, green: CGFloat(255)/255, blue: CGFloat(102), alpha: 1.0)
         countDownLabel.textColor = UIColor(red: CGFloat(255)/255, green: CGFloat(0), blue: CGFloat(0), alpha: 1.0)
         countDownLabel.text = "60"
         countDownLabel.center.x = self.view.bounds.width/2
