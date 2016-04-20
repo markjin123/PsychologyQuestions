@@ -8,19 +8,42 @@
 
 import UIKit
 
-class Player1: UIViewController {
+class Player1: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var textFieldEnterName: UITextField!
-    
+    var blink = true
     @IBOutlet weak var labelPlayer1: UILabel!
+    @IBOutlet weak var ProfilePicture: UILabel!
+    @IBOutlet weak var PhotoLibrary: UIButton!
+    @IBOutlet weak var DisplayPhoto: UIImageView!
+    @IBOutlet weak var TakePhoto: UIButton!
+    var image2:UIImage!
     
-    @IBOutlet weak var buttonDone: UIButton!
+    @IBOutlet weak var nextQuestion: UIButton!
+    @IBAction func PhotoGallery(sender: AnyObject) {
+        let pick = UIImagePickerController()
+        pick.delegate = self
+        pick.sourceType = .PhotoLibrary
+        presentViewController(pick, animated: true, completion: nil)
+    }
+    @IBAction func TakePhoto(sender: AnyObject) {
+        let pick = UIImagePickerController()
+        pick.delegate = self
+        pick.sourceType = .Camera
+        presentViewController(pick, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor(red: 0, green: 153, blue: 255, alpha: 1.0)
+        self.view.backgroundColor = UIColor(red: CGFloat(0), green: CGFloat(153)/255, blue: CGFloat(255)/255, alpha: CGFloat(1))
+        ProfilePicture.sizeToFit()
+        TakePhoto.sizeToFit()
+        DisplayPhoto.center.x = self.view.bounds.width/2
+        ProfilePicture.center.x = self.view.bounds.width/2
+        TakePhoto.center.x = self.view.bounds.width/4
+        PhotoLibrary.center.x = self.view.bounds.width*3/4
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "removeKeyboard")
         textFieldEnterName.placeholder = "Enter Name Here"
         
@@ -40,31 +63,25 @@ class Player1: UIViewController {
         super.viewWillAppear(animated)
         self.textFieldEnterName.alpha -= 1
         self.labelPlayer1.alpha -= 1
-        self.buttonDone.alpha -= 1
+
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         UIView.animateWithDuration(0.5, delay: 0.5, options: [], animations: {self.textFieldEnterName.alpha = 1}, completion: nil)
         UIView.animateWithDuration(0.5, delay: 0, options: [], animations: {self.labelPlayer1.alpha = 1}, completion: nil)
-        UIView.animateWithDuration(0.5, delay: 1, options: [], animations: {self.buttonDone.alpha = 1}, completion: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "segueChange"){
             let svc = segue.destinationViewController as! Player2;
             svc.player1Name = textFieldEnterName.text!
+            svc.player1image = self.DisplayPhoto.image
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        self.DisplayPhoto.image = image
+        dismissViewControllerAnimated(true, completion: nil)
     }
-    */
-
 }

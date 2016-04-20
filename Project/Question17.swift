@@ -12,21 +12,28 @@ import AudioToolbox
 class Question17: UIViewController {
     var player1Name:String = ""
     var player2Name:String = ""
+    var player1image:UIImage!
+    var player2image:UIImage!
     var time:Int = 2
     var player1 = true
     var player2 = true
+    var blink = true
+    
+    @IBOutlet weak var DisplayPhoto2: UIImageView!
+    @IBOutlet weak var DisplayPhoto: UIImageView!
+    @IBOutlet weak var Continue: UILabel!
     @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var timesUp: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var name2: UILabel!
     @IBOutlet weak var Question17: UILabel!
-    @IBOutlet weak var nextQuestion: UIButton!
     
+    @IBOutlet weak var nextQuestion: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor(red: 0, green: 230, blue: 230, alpha: 1.0)
+        self.view.backgroundColor = UIColor(red: CGFloat(0), green: CGFloat(230)/255, blue: CGFloat(230)/255, alpha: 1.0)
         Question17.sizeToFit()
         name.text = player1Name
         name2.text = player2Name
@@ -47,6 +54,14 @@ class Question17: UIViewController {
         timesUp.center.x -= self.view.bounds.width
         nextQuestion.center.x = CGFloat(Int(self.view.bounds.width) - 50)
         nextQuestion.center.y = CGFloat(Int(self.view.bounds.height) - 50)
+        Continue.sizeToFit()
+        Continue.alpha = 0
+        Continue.center.x = self.view.bounds.width/2
+        DisplayPhoto.center.x = -self.view.bounds.width/2
+        DisplayPhoto2.center.x = -self.view.bounds.width/2
+        DisplayPhoto.image = player1image
+        DisplayPhoto.image = player2image
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,7 +87,8 @@ class Question17: UIViewController {
         //the follow two parts is how the player1 label is animated
         UIView.animateWithDuration(0.5, delay: 0, options: [], animations: {self.name.center.x += self.view.bounds.width}, completion: nil)
         UIView.animateWithDuration(0.5, delay: 2, options: [], animations: {self.name.center.x += self.view.bounds.width}, completion: nil)
-        
+        UIView.animateWithDuration(0.5, delay: 0, options: [], animations: {self.DisplayPhoto.center.x += self.view.bounds.width}, completion: nil)
+        UIView.animateWithDuration(0.5, delay: 2, options: [], animations: {self.DisplayPhoto.center.x += self.view.bounds.width}, completion: nil)
         
         //this line is how the we animate the alpha of the question
         UIView.animateWithDuration(0.3, delay: 2.5, options: [], animations: {self.Question17.alpha += 1}, completion: nil)
@@ -89,6 +105,8 @@ class Question17: UIViewController {
             let svc = segue.destinationViewController as! Question18;
             svc.player1Name = self.player1Name
             svc.player2Name = self.player2Name
+            svc.player1image = self.player1image
+            svc.player2image = self.player2image
         }
     }
     
@@ -120,6 +138,8 @@ class Question17: UIViewController {
         UIView.animateWithDuration(0.5, delay: 0, options: [], animations: {self.timesUp.center.x += self.view.bounds.width}, completion: nil)
         UIView.animateWithDuration(0.5,delay:1.0,options:[],animations:{self.name2.center.x += self.view.bounds.width},completion:nil)
         UIView.animateWithDuration(0.5,delay:3,options:[], animations:{self.name2.center.x += self.view.bounds.width}, completion:nil)
+        UIView.animateWithDuration(0.5, delay: 1, options: [], animations: {self.DisplayPhoto2.center.x += self.view.bounds.width}, completion: nil)
+        UIView.animateWithDuration(0.5, delay: 3.0, options: [], animations: {self.DisplayPhoto2.center.x += self.view.bounds.width}, completion: nil)
         NSTimer.scheduledTimerWithTimeInterval(2.1, target: self, selector: ("timer2Init"), userInfo: nil, repeats: false)
     }
     
@@ -142,10 +162,25 @@ class Question17: UIViewController {
                 let delay = 2.0 * Double(NSEC_PER_SEC)
                 let Dtime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
                 dispatch_after(Dtime, dispatch_get_main_queue()) {
-                    self.nextQuestion.enabled = true
+                    self.StartTouchAny()
                     UIView.animateWithDuration(0.3, delay: 0, options: [], animations: {self.nextQuestion.alpha += 1}, completion: nil)
                 }
             }
+        }
+    }
+    func StartTouchAny(){
+        NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "TouchAny", userInfo: nil, repeats: true)
+        self.nextQuestion.enabled = true
+    }
+    func TouchAny(){
+        if blink{
+            UIView.animateWithDuration(0.50, delay: 0, options: [], animations: {self.Continue.alpha += 1}, completion: nil)
+            Continue.alpha = 1
+            blink = false
+        }else{
+            UIView.animateWithDuration(0.50, delay: 0, options: [], animations: {self.Continue.alpha -= 1}, completion: nil)
+            Continue.alpha = 0
+            blink = true
         }
     }
 

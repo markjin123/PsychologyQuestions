@@ -13,12 +13,19 @@ class Instructions_Page: UIViewController {
     @IBOutlet weak var labelTitle: UILabel!
     
     @IBOutlet weak var labelParagraph: UILabel!
-    
+    var blink = true
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(red: 128, green: 128, blue: 255, alpha: 1)
-        labelTitle.text = "Instructions"
-        labelParagraph.text = "Grab a friend, lover, partner or family member and start answering some question. Each individual will get 1 minute to answer each of the questions before moving on."
+        self.view.backgroundColor = UIColor(red: CGFloat(128)/255, green: CGFloat(128), blue: CGFloat(255), alpha: CGFloat(1))
+        labelTitle.text = "Touch Anywhere To Coutinue"
+        labelParagraph.text = "Grab a friend, lover, partner or family member and start answering some question. Each individual will be given 1 minute to answer each of the questions before moving on."
+        
+        labelParagraph.sizeToFit()
+        labelParagraph.center.x = self.view.bounds.width/2
+        
+        labelTitle.sizeToFit()
+        labelTitle.center.x = self.view.bounds.width/2
+        labelTitle.alpha -= 1
 
         // Do any additional setup after loading the view.
     }
@@ -36,18 +43,20 @@ class Instructions_Page: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        UIView.animateWithDuration(0.5, delay: 0, options: [], animations: {self.labelTitle.alpha = 1}, completion: nil)
-        UIView.animateWithDuration(0.5, delay: 0.5, options: [], animations: {self.labelParagraph.alpha = 1}, completion: nil)
+        UIView.animateWithDuration(0.5, delay: 0, options: [], animations: {self.labelParagraph.alpha = 1}, completion: nil)
+        NSTimer.scheduledTimerWithTimeInterval(0.50, target: self, selector: "TouchAny", userInfo: nil, repeats: true)
+        
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func TouchAny(){
+        if blink{
+            UIView.animateWithDuration(0.50, delay: 0, options: [], animations: {self.labelTitle.alpha += 1}, completion: nil)
+            labelTitle.alpha = 1
+            blink = false
+        }else{
+            UIView.animateWithDuration(0.50, delay: 0, options: [], animations: {self.labelTitle.alpha -= 1}, completion: nil)
+            labelTitle.alpha = 0
+            blink = true
+        }
     }
-    */
 
 }
